@@ -2,6 +2,8 @@
 
 using namespace std;
 
+Literal::Literal(){};
+
 Literal::Literal(string expr_) : exp(expr_) {
     if (exp == "true" || exp == "false") {
         boolean = true;

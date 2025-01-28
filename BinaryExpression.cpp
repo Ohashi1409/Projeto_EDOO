@@ -4,6 +4,8 @@
 
 using namespace std;
 
+BinaryExpression::BinaryExpression(){}
+
 BinaryExpression::BinaryExpression(const string& op, Expression* left, Expression* right) : 
 op(op), left(left), right(right) {}
 

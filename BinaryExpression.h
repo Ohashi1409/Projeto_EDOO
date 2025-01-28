@@ -13,6 +13,7 @@ class BinaryExpression : public Expression {
         Expression* left;
         Expression* right;
     public:
+        BinaryExpression();
         BinaryExpression(const string& op, Expression* left, Expression* right);
         int evaluate() const override;
         bool isBool() const override;

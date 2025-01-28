@@ -29,6 +29,7 @@ class Parser {
         Expression* parseUnaryExp();
 
     public:
+        Parser();
         Parser(const vector<Token>& expression);
         Expression* parseExp();
         bool isBool() const;

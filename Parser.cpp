@@ -6,6 +6,8 @@
 
 using namespace std;
 
+Parser::Parser(){};
+
 Parser::Parser(const vector<Token>& tokens) 
 : tokens(tokens), position(0), possible_exp(true) {}
 

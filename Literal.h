@@ -11,6 +11,7 @@ class Literal : public Expression {
         string exp;
         bool boolean;
     public:
+        Literal(); 
         Literal(string exp_);
         int evaluate() const override;
         bool isBool() const override;
