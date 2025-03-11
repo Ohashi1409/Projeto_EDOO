@@ -150,6 +150,7 @@ Expression* Parser::parsePrimaryExp() {
     if (token.getType() == TokenType::NUMBER || token.getType() == TokenType::BOOLEAN) {
         Expression* literal = new Literal(token.getValue());
         useToken();
+        if (literal->isBool()) { this->boolean = true; }
         return literal;
     } 
     else if (token.getValue() == "(") {
